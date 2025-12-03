@@ -1,53 +1,63 @@
 <!--
-  Theme: Elementerial-ArkOS
-  Author: giovaboy
+  Theme: Elementerial
+  Author: mluizvitor
 -->
 
 <theme>
   <formatVersion>7</formatVersion>
 
-  <!-- Menu Settings -->
+  <!-- View do menu de configurações do sistema -->
   <view name="menu">
+    <!-- Texto padrão do menu -->
     <menuText name="menutext">
       <fontPath>${fontRegular}</fontPath>
-      <fontSize>${fontSizeBody}</fontSize>
     </menuText>
 
+    <!-- Texto pequeno do menu -->
     <menuTextSmall name="menutextsmall">
       <fontPath>${fontLight}</fontPath>
-      <fontSize>${fontSizeCaption}</fontSize>
     </menuTextSmall>
 
+    <!-- Grupo de itens do menu -->
     <menuGroup name="menugroup">
       <fontPath>${fontRegular}</fontPath>
-      <fontSize>${fontSizeCaption}</fontSize>
     </menuGroup>
 
+    <!-- Título do menu -->
     <menuText name="menutitle">
       <fontPath>${fontBold}</fontPath>
-      <fontSize>${fontSizeH2}</fontSize>
     </menuText>
 
+    <!-- Fundo do menu -->
     <menuBackground name="menubg">
-      <fadePath>./assets/fade.png</fadePath>
+      <fadePath>./assets/shade.png</fadePath>
       <size>1 1</size>
     </menuBackground>
 
+    <!-- Botão do menu -->
     <menuButton name="menubutton">
-      <path>./assets/button-normal.png</path>
-      <filledPath>./assets/button-hover.png</filledPath>
+      <path>./assets/button-normal.svg</path>
+      <filledPath>./assets/button-hover.svg</filledPath>
+      <cornerSize>8 8</cornerSize>
     </menuButton>
 
+    <!-- Switch do menu -->
     <menuSwitch name="menuswitch">
       <pathOn>./assets/switch-on.svg</pathOn>
       <pathOff>./assets/switch-off.svg</pathOff>
     </menuSwitch>
 
+    <!-- Texto do rodapé do menu -->
     <menuText name="menufooter">
       <fontPath>${fontBold}</fontPath>
-      <fontSize>${fontSizeCaption}</fontSize>
     </menuText>
 
+    <!-- Campo de edição de texto do menu -->
+    <menuTextEdit name="menutextedit">
+      <fontPath>${fontBold}</fontPath>
+    </menuTextEdit>
+
+    <!-- Ícones do menu -->
     <menuIcons name="menuicons">
       <iconSystem>./assets/icons/cog.svg</iconSystem>
       <iconUpdates>./assets/icons/update.svg</iconUpdates>
@@ -66,5 +76,4 @@
       <iconFastShutdown>./assets/icons/power.svg</iconFastShutdown>
     </menuIcons>
   </view>
-
 </theme>

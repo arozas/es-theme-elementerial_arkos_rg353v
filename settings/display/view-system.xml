@@ -1,78 +1,63 @@
 <!--
-  Theme: Elementerial-ArkOS
-  Author: giovaboy
+  Theme: Elementerial
+  Author: mluizvitor
 -->
 
 <theme>
   <formatVersion>7</formatVersion>
 
+  <!-- View do sistema, exibe carrossel, fundo, nome, logo e informações do sistema -->
   <view name="system">
-    <!-- Cards position -->
     <carousel name="systemcarousel">
       <origin>0.5 0</origin>
       <pos>0.5 0</pos>
       <defaultTransition>fade</defaultTransition>
       <systemInfoDelay>300</systemInfoDelay>
-      <size>1.1 1</size>
-      <logoSize>0.25 0.25</logoSize>      <!-- 480x320 / 120x 80y -->
-      <logoScale>1.6</logoScale>
-      <maxLogoCount>3.0</maxLogoCount>
-      <logoPos>0.15 0.6</logoPos>
-      <zIndex>100</zIndex>
+      <logoSize>0.25 0.25</logoSize>
+      <logoScale>1.4</logoScale>
+      <zIndex>10</zIndex>
     </carousel>
 
-    <image name="custom_bg_fg" extra="true">
-       <size>1 1</size>
-       <origin>0 0</origin>
-       <pos>0 0.15</pos>
-       <zIndex>-7</zIndex>
+    <image name="background_overlay" extra="true">
+      <size>1 1</size>
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <zIndex>-7</zIndex>
     </image>
 
-     <!-- System Name -->
+    <!-- Bloco que exibe o nome completo do sistema -->
     <text name="systemName" extra="true">
       <text>${system.fullName}</text>
       <origin>0 0</origin>
-      <pos>0.07333 0.325</pos>      <!-- 480x320 / 48x 104y -->
-      <size>0.866667 ${fontSizeH1-medium}</size>      <!-- 480x320 / 416x -->
+      <size>0.866667 ${fontSizeH1-medium}</size>
       <fontPath>${fontBold}</fontPath>
-
-      <fontSize>${fontSizeH1}</fontSize>
-
+      <forceUppercase>1</forceUppercase>
       <lineSpacing>1</lineSpacing>
       <alignment>left</alignment>
       <zIndex>15</zIndex>
     </text>
 
-    <!-- Total games per system -->
+    <!-- Bloco que exibe o número de jogos -->
     <text name="systemInfo">
       <origin>0 0</origin>
-      <pos>0.07333 0.41</pos>
-      <size>0.866667 ${fontSizeBody-medium}</size>      <!-- 480x320 / 416x -->
-
-      <fontSize>${fontSizeBody}</fontSize>
-
+      <size>0.866667 ${fontSizeBody-medium}</size>
       <alignment>left</alignment>
-      <forceUppercase>0</forceUppercase>
+      <forceUppercase>1</forceUppercase>
       <fontPath>${fontRegular}</fontPath>
       <lineSpacing>1</lineSpacing>
       <zIndex>15</zIndex>
     </text>
 
-    <!-- System Logo -->
     <image name="logo">
       <path>./assets/logos/${system.theme}.svg</path>
-      <zIndex>400</zIndex>
     </image>
 
-    <!-- Logo Fallback -->
+    <!-- Bloco que exibe texto alternativo para o logo -->
     <text name="logoText">
       <origin>0 0</origin>
       <fontPath>${fontRegular}</fontPath>
-      <fontSize>${fontSizeBody}</fontSize>
-      <zIndex>300</zIndex>
     </text>
 
-    <!-- System Background-->
     <image name="background" extra="true">
       <path>./assets/background.png</path>
       <size>1 1</size>
@@ -82,10 +67,7 @@
       <zIndex>-50</zIndex>
     </image>
 
-    <!-- System Background-->
     <image name="cover" extra="true">
-      <path>{random:image}</path>
-      <path>./assets/systems/${system.theme}.webp</path>
       <size>1 0</size>
       <origin>0 0.5</origin>
       <pos>0 0.25</pos>
@@ -94,9 +76,9 @@
         <animation property="opacity" from="0" to="1" begin="0" duration="1000" mode="easeOut" />
       </storyboard>
     </image>
-
   </view>
 
+  <!-- View que exibe o fundo do OSD nos modos sistema, básico, detalhado e grid -->
   <view name="system, basic, detailed, grid">
     <image name="osdBackground" extra="true">
       <pos>0 0</pos>
@@ -106,31 +88,15 @@
     </image>
   </view>
 
+  <!-- View da tela principal, exibe relógio e atividade do controle -->
   <view name="screen">
     <text name="clock">
       <origin>0 0.5</origin>
-      <pos>0 0.0375</pos>      <!-- 480x320 / 0x 12y-->
-      <size>0.84 0</size>      <!-- 480x320 / 424x-->
-      <fontSize>${fontSizeCaption-medium}</fontSize>
+      <fontSize>${fontSizeBody-medium}</fontSize>
       <fontPath>${fontRegular}</fontPath>
       <lineSpacing>1</lineSpacing>
       <alignment>right</alignment>
     </text>
-
-    <batteryIndicator name="batteryIndicator">
-      <pos>0.93 0.0125</pos>      <!-- 480x320 / 456x (from right to left) 4y-->
-      <size>0.05</size>      <!-- 16x 16y-->
-      <itemSpacing>0.008333333</itemSpacing>
-
-      <!-- assets -->
-      <full>./assets/icons/screen/24x24/battery-full.svg</full>
-      <at75>./assets/icons/screen/24x24/battery-75.svg</at75>
-      <at50>./assets/icons/screen/24x24/battery-50.svg</at50>
-      <at25>./assets/icons/screen/24x24/battery-25.svg</at25>
-      <empty>./assets/icons/screen/24x24/battery-empty.svg</empty>
-      <incharge>./assets/icons/screen/24x24/battery-charging.svg</incharge>
-      <networkicon>./assets/icons/screen/24x24/wifi-on.svg</networkicon>
-    </batteryIndicator>
 
     <controllerActivity name="controllerActivity">
       <origin>0 0</origin>

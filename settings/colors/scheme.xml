@@ -6,12 +6,7 @@
 <theme>
   <formatVersion>7</formatVersion>
 
-  <variables>
-    <fgColor ifSubset="Style:dark">FFFFFF</fgColor>
-    <fgColor ifSubset="Style:light">000000</fgColor>
-  </variables>
-
-  <!--Configurações de ajuda-->
+  <!-- View que configura as cores da barra de ajuda e do fundo em todos os modos -->
   <view name="system, basic, detailed, grid, video">
     <helpsystem name="help">
       <textColor>${fgColor}</textColor>
@@ -23,7 +18,7 @@
     </image>
   </view>
 
-  <!--Configurações de cores nas listas de jogos-->
+  <!-- View que configura as cores das listas de jogos, textos e overlays -->
   <view name="basic, detailed, grid, video">
     <text name="logoText, md_name">
       <color>${fgColor}${percent.90}</color>
@@ -43,11 +38,27 @@
       <unfilledColor>${sectColor}</unfilledColor>
     </rating>
 
-    <image name="custom_bg_fg" extra="true">
+    <image name="background_overlay" extra="true">
       <color>${bgColor}</color>
     </image>
+
+    <text name="md_name">
+      <color>${fgColor}${percent.90}</color>
+      <textColor>${fgColor}${percent.90}</textColor>
+    </text>
+
+    <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_releasedate, md_developer, md_publisher, md_genre, md_players, md_lastplayed, md_playcount, md_description">
+      <color>${fgColor}${percent.90}</color>
+      <textColor>${fgColor}${percent.90}</textColor>
+    </text>
+
+    <datetime name="md_releasedate, md_lastplayed">
+      <color>${fgColor}${percent.90}</color>
+      <textColor>${fgColor}${percent.90}</textColor>
+    </datetime>
   </view>
 
+  <!-- View que configura as cores do menu de configurações -->
   <view name="menu">
     <menuText name="menutext">
       <selectedColor>${onMainColor}</selectedColor>
@@ -77,30 +88,10 @@
     <menuText name="menutitle">
       <color>${fgColor}</color>
     </menuText>
-
-    <menuTextEdit name="menutextedit" ifSubset="Style:dark">
-      <inactive>./assets/input_inactive-dark.svg</inactive>
-      <active>./assets/input_active-dark.svg</active>
-    </menuTextEdit>
-
-    <menuTextEdit name="menutextedit" ifSubset="Style:light">
-      <inactive>./assets/input_inactive-light.svg</inactive>
-      <active>./assets/input_active-light.svg</active>
-    </menuTextEdit>
   </view>
 
-  <!--Configurações da view "grid"-->
+  <!-- View que configura as cores dos tiles da grid -->
   <view name="grid">
-    <imagegrid name="gamegrid" ifSubset="Style:dark">
-      <gameImage>./assets/icons/cartridge-dark.png</gameImage>
-      <folderImage>./assets/icons/folder-dark.png</folderImage>
-    </imagegrid>
-
-    <imagegrid name="gamegrid" ifSubset="Style:light">
-      <gameImage>./assets/icons/cartridge-light.png</gameImage>
-      <folderImage>./assets/icons/folder-light.png</folderImage>
-    </imagegrid>
-
     <text name="gridtile">
       <color>${fgColor}</color>
     </text>
@@ -110,53 +101,52 @@
     </text>
   </view>
 
+  <!-- CustomView "boxes" que configura as cores dos tiles na grid personalizada -->
   <customView name="boxes" inherits="grid">
     <text name="gridtile">
       <color>FFFFFF</color>
       <backgroundColor>000000${percent.80}</backgroundColor>
     </text>
+
     <text name="gridtile:selected">
       <color>FFFFFF</color>
     </text>
   </customView>
 
+  <!-- CustomView "elementflix" que configura as cores dos tiles na grid estilo Netflix -->
   <customView name="elementflix" inherits="grid">
     <text name="gridtile">
       <color>${fgColor}${percent.80}</color>
     </text>
+
     <text name="gridtile:selected">
       <color>${fgColor}</color>
     </text>
   </customView>
 
-  <!-- Carousel Config -->
+  <!-- View que configura as cores do carrossel, nome do sistema e informações -->
   <view name="system">
     <carousel name="systemcarousel">
-      <color ifSubset="Background Style:default">${bgColor}00</color>
-      <color ifSubset="Background Style:random">${bgColor}00</color>
-      <color ifSubset="Background Style:custom">${bgColor}00</color>
+      <color>${bgColor}00</color>
     </carousel>
 
-    <!-- System Name -->
     <text name="systemName">
       <color>${fgColor}${percent.90}</color>
       <glowColor>${bgColor}${percent.10}</glowColor>
       <glowSize>1</glowSize>
     </text>
 
-    <!-- Total games per system -->
     <text name="systemInfo">
       <color>${fgColor}${percent.90}</color>
       <glowColor>${bgColor}${percent.10}</glowColor>
       <glowSize>1</glowSize>
     </text>
 
-    <!-- System Background -->
     <image name="cover_fallback" extra="true">
       <color>${bgColor}</color>
     </image>
 
-    <image name="custom_bg_fg" extra="true">
+    <image name="background_overlay" extra="true">
       <color>${bgColor}</color>
     </image>
 
@@ -167,13 +157,14 @@
     </text>
   </view>
 
+  <!-- View que configura a cor do fundo do OSD nos modos sistema, básico, detalhado e grid -->
   <view name="system, basic, detailed, grid">
     <image name="osdBackground" extra="true">
       <color>000000</color>
     </image>
   </view>
 
-  <!-- Clock Settings -->
+  <!-- View que configura as cores do relógio, indicador de bateria e atividade do controle -->
   <view name="screen">
     <text name="clock">
       <color>FFFFFF</color>
