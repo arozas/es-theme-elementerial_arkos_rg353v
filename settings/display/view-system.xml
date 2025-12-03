@@ -16,8 +16,8 @@
       <size>1.1 1</size>
       <logoSize>0.25 0.25</logoSize>      <!-- 480x320 / 120x 80y -->
       <logoScale>1.6</logoScale>
-      <maxLogoCount>3</maxLogoCount>
-      <logoPos>0.15 0.55</logoPos>
+      <maxLogoCount>3.0</maxLogoCount>
+      <logoPos>0.15 0.6</logoPos>
       <zIndex>100</zIndex>
     </carousel>
 
@@ -61,6 +61,7 @@
     <!-- System Logo -->
     <image name="logo">
       <path>./assets/logos/${system.theme}.svg</path>
+      <zIndex>400</zIndex>
     </image>
 
     <!-- Logo Fallback -->
@@ -68,6 +69,7 @@
       <origin>0 0</origin>
       <fontPath>${fontRegular}</fontPath>
       <fontSize>${fontSizeBody}</fontSize>
+      <zIndex>300</zIndex>
     </text>
 
     <!-- System Background-->
@@ -120,14 +122,14 @@
       <size>0.05</size>      <!-- 16x 16y-->
       <itemSpacing>0.008333333</itemSpacing>
 
-      <!-- Assets -->
-      <full>./assets/icons/screen/16x16/battery=full.svg</full>
-      <at75>./assets/icons/screen/16x16/battery=75.svg</at75>
-      <at50>./assets/icons/screen/16x16/battery=50.svg</at50>
-      <at25>./assets/icons/screen/16x16/battery=25.svg</at25>
-      <empty>./assets/icons/screen/16x16/battery=empty.svg</empty>
-      <incharge>./assets/icons/screen/16x16/battery=charging.svg</incharge>
-      <networkIcon>./assets/icons/screen/16x16/wifi=on.svg</networkIcon>
+      <!-- assets -->
+      <full>./assets/icons/screen/24x24/battery-full.svg</full>
+      <at75>./assets/icons/screen/24x24/battery-75.svg</at75>
+      <at50>./assets/icons/screen/24x24/battery-50.svg</at50>
+      <at25>./assets/icons/screen/24x24/battery-25.svg</at25>
+      <empty>./assets/icons/screen/24x24/battery-empty.svg</empty>
+      <incharge>./assets/icons/screen/24x24/battery-charging.svg</incharge>
+      <networkicon>./assets/icons/screen/24x24/wifi-on.svg</networkicon>
     </batteryIndicator>
 
     <controllerActivity name="controllerActivity">

@@ -14,7 +14,7 @@
   <view name="system">
     <!-- Cards position -->
     <carousel name="systemcarousel">
-      <logoPos ifSubset="Ratio:ratio43">0.15 0.6</logoPos>
+      <logoPos ifSubset="Ratio:ratio43">0.15 0.6</logoPos>   <!-- Cards position 0.15 0.6-->
     </carousel>
 
     <image name="custom_bg_fg" extra="true">
@@ -23,12 +23,12 @@
 
     <!-- System Name -->
     <text name="systemName" extra="true">
-      <pos ifSubset="Ratio:ratio43">0.08333 0.375</pos>
+      <pos ifSubset="Ratio:ratio43">0.03 0.350</pos> <!-- 0.08333 0.375-->
     </text>
 
     <!-- Total games per system -->
     <text name="systemInfo">
-      <pos ifSubset="Ratio:ratio43">0.08333 0.46</pos>
+      <pos ifSubset="Ratio:ratio43">0.03 0.46</pos> <!-- 0.08333 0.46-->
     </text>
   </view>
 
@@ -105,14 +105,14 @@
     <batteryIndicator name="batteryIndicator" ifSubset="Ratio:ratio43">
       <size>0.05</size>      <!-- 24x 24y-->
 
-      <!-- Assets -->
-      <full>./assets/icons/screen/24x24/battery=full.svg</full>
-      <at75>./assets/icons/screen/24x24/battery=75.svg</at75>
-      <at50>./assets/icons/screen/24x24/battery=50.svg</at50>
-      <at25>./assets/icons/screen/24x24/battery=25.svg</at25>
-      <empty>./assets/icons/screen/24x24/battery=empty.svg</empty>
-      <incharge>./assets/icons/screen/24x24/battery=charging.svg</incharge>
-      <networkIcon>./assets/icons/screen/24x24/wifi=on.svg</networkIcon>
+      <!-- assets -->
+      <full>./assets/icons/screen/24x24/battery-full.svg</full>
+      <at75>./assets/icons/screen/24x24/battery-75.svg</at75>
+      <at50>./assets/icons/screen/24x24/battery-50.svg</at50>
+      <at25>./assets/icons/screen/24x24/battery-25.svg</at25>
+      <empty>./assets/icons/screen/24x24/battery-empty.svg</empty>
+      <incharge>./assets/icons/screen/24x24/battery-charging.svg</incharge>
+      <networkicon>./assets/icons/screen/24x24/wifi-on.svg</networkicon>
     </batteryIndicator>
   </view>
 
