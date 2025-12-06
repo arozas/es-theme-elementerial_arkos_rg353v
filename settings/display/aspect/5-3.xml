@@ -94,11 +94,11 @@
     </image>
 
     <text name="systemName" extra="true">
-      <pos>0.08333 0.325</pos>
+      <pos>0.05 0.325</pos>
     </text>
 
     <text name="systemInfo">
-      <pos>0.08333 0.41</pos>
+      <pos>0.05 0.41</pos>
     </text>
   </view>
 

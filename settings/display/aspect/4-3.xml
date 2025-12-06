@@ -93,8 +93,9 @@
   <view name="system">
     <carousel name="systemcarousel">
       <size>1.1 1</size>
-      <maxLogoCount>4</maxLogoCount>
+      <maxLogoCount>3</maxLogoCount>
       <logoPos>0.15 0.6</logoPos>
+      <logoSize>0.25 0.25</logoSize>
     </carousel>
 
     <image name="background_overlay" extra="true">
@@ -102,11 +103,11 @@
     </image>
 
     <text name="systemName" extra="true">
-      <pos>0.08333 0.375</pos>
+      <pos>0.05 0.375</pos>
     </text>
 
     <text name="systemInfo">
-      <pos>0.08333 0.46</pos>
+      <pos>0.05 0.46</pos>
     </text>
   </view>
 

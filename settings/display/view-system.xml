@@ -13,7 +13,7 @@
       <pos>0.5 0</pos>
       <defaultTransition>fade</defaultTransition>
       <systemInfoDelay>300</systemInfoDelay>
-      <logoSize>0.25 0.25</logoSize>
+      <logoSize>0.3 0.3</logoSize>
       <logoScale>1.4</logoScale>
       <zIndex>10</zIndex>
     </carousel>

@@ -107,7 +107,7 @@
   <!-- View do sistema, exibindo carrossel, fundo e informações do sistema -->
   <view name="system">
     <carousel name="systemcarousel">
-      <size>1.2 1</size>
+      <size>1.05 1</size>
       <logoPos>0.2 0.6</logoPos>
       <maxLogoCount>4</maxLogoCount>
     </carousel>
@@ -117,11 +117,11 @@
     </image>
 
     <text name="systemName" extra="true">
-      <pos>0.08333 0.375</pos>
+      <pos>0.05 0.375</pos>
     </text>
 
     <text name="systemInfo">
-      <pos>0.08333 0.475</pos>
+      <pos>0.05 0.475</pos>
     </text>
   </view>
 
