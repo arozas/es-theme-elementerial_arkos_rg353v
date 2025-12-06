@@ -128,7 +128,7 @@
   <!-- View que exibe o fundo do OSD nos modos sistema, básico, detalhado e grid e vídeo -->
   <view name="system, basic, detailed, grid, video">
     <image name="osdBackground" extra="true">
-      <path>./assets/ratio43/osd-bg.png</path>
+      <path>./assets/ratio11/osd-bg.png</path>
     </image>
   </view>
 

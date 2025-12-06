@@ -78,18 +78,13 @@
     </menuText>
 
     <menuTextEdit name="menutextedit">
-      <inactive>./assets/input_inactive-dark.svg</inactive>
+      <inactive>./assets/input_inactive.svg</inactive>
       <active>./assets/input_active-dark.svg</active>
     </menuTextEdit>
   </view>
 
   <!--Configurações da view "grid"-->
   <view name="grid">
-    <imagegrid name="gamegrid">
-      <gameImage>./assets/icons/cartridge-dark.png</gameImage>
-      <folderImage>./assets/icons/folder-dark.png</folderImage>
-    </imagegrid>
-
     <text name="gridtile">
       <color>${fgColor}</color>
     </text>
