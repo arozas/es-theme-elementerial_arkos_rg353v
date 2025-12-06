@@ -8,6 +8,21 @@
 
   <include>./variables.xml</include>
 
+  <!-- Battery and WiFi indicator (defined here for ArkOS compatibility, like Art Book Next) -->
+  <view name="screen">
+    <batteryIndicator name="batteryIndicator">
+      <origin>1 0</origin>
+      <itemSpacing>0</itemSpacing>
+      <full>./assets/icons/screen/32x32/battery=full.svg</full>
+      <at75>./assets/icons/screen/32x32/battery=75.svg</at75>
+      <at50>./assets/icons/screen/32x32/battery=50.svg</at50>
+      <at25>./assets/icons/screen/32x32/battery=25.svg</at25>
+      <empty>./assets/icons/screen/32x32/battery=empty.svg</empty>
+      <incharge>./assets/icons/screen/32x32/battery=charging.svg</incharge>
+      <networkIcon>./assets/icons/screen/32x32/wifi-on.svg</networkIcon>
+    </batteryIndicator>
+  </view>
+
   <!-- Subset que permite escolher o esquema de cores do tema -->
   <subset name="Color scheme" displayName="Color scheme">
     <include name="strawberry" displayName="strawberry">./settings/colors/strawberry/main.xml</include>

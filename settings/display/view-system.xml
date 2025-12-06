@@ -105,5 +105,6 @@
       <itemSpacing>0.003</itemSpacing>
       <imagePath>./assets/pin.svg</imagePath>
     </controllerActivity>
+    <!-- batteryIndicator moved to theme.xml for ArkOS compatibility -->
   </view>
 </theme>

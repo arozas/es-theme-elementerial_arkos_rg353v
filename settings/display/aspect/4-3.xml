@@ -160,18 +160,10 @@
       <size>0.7625 0</size>
     </text>
 
+    <!-- Icon paths defined in view-system.xml, only override pos/size here -->
     <batteryIndicator name="batteryIndicator">
-      <pos>0.9 0.008333333</pos> 
+      <pos>0.9 0.008333333</pos>
       <size>0.066666667</size>
-      <itemSpacing>0.0125</itemSpacing>
-
-      <full>./assets/icons/screen/32x32/battery=full.svg</full>
-      <at75>./assets/icons/screen/32x32/battery=75.svg</at75>
-      <at50>./assets/icons/screen/32x32/battery=50.svg</at50>
-      <at25>./assets/icons/screen/32x32/battery=25.svg</at25>
-      <empty>./assets/icons/screen/32x32/battery=empty.svg</empty>
-      <incharge>./assets/icons/screen/32x32/battery=charging.svg</incharge>
-      <networkIcon>./assets/icons/screen/32x32/wifi=on.svg</networkIcon>
     </batteryIndicator>
   </view>
 </theme>

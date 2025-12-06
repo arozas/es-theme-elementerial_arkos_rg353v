@@ -162,7 +162,7 @@
       <at25>./assets/icons/screen/72x72/battery=25.svg</at25>
       <empty>./assets/icons/screen/72x72/battery=empty.svg</empty>
       <incharge>./assets/icons/screen/72x72/battery=charging.svg</incharge>
-      <networkIcon>./assets/icons/screen/72x72/wifi=on.svg</networkIcon>
+      <networkIcon>./assets/icons/screen/72x72/wifi-on.svg</networkIcon>
     </batteryIndicator>
   </view>
 </theme>
